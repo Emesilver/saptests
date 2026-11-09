@@ -1,0 +1,3 @@
+destinations='[]'
+cds_requires='{"BusinessPartnerA2X":{"impl":"@sap/cds/srv/remote-service.js","external":true,"kind":"odata-v2","model":"srv/external/BusinessPartnerA2X","credentials":{"url":"https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER","headers":{"ApiKey":"7gfC9qnwd4ATKCMT9qxy3HIQA9g4kbfE"}}},"auth":{"strategy":"dummy","kind":"dummy"},"messaging":{"kind":"local-messaging"}}'
+VCAP_SERVICES='{}'
