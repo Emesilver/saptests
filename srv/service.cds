@@ -25,12 +25,13 @@ service RiskManagementService
 
 annotate RiskManagementService with @requires :
 [
-    'RiskViewer'
+    'RiskViewer',
+    'authenticated-user'
 ];
 
 annotate RiskManagementService.Risks with @(restrict : [
     {
         grant : [ 'READ' ],
-        to    : 'RiskViewer'
+        to    : [ 'RiskViewer', 'authenticated-user' ]
     }
 ]);
